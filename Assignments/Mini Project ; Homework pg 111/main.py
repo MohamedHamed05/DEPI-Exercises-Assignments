@@ -1,7 +1,7 @@
 import calc
 
 while True:
-    cmd = input("Enter command (add, sub, mult, div) or 'stop' to exit: ").lower()
+    cmd = input("Enter operation (add, sub, mult, div) or 'stop' to exit: ").lower()
     if cmd == "stop":
         print("Exiting...")
         break
@@ -22,6 +22,6 @@ while True:
 
             print(f"Result: {result}")
         except ValueError:
-            print("Invalid input. Please enter numeric values.")
+            print("Invalid input. Please enter a number.")
     else:
-        print("Invalid command. Try again.")
+        print("Invalid operation. Try again.")
